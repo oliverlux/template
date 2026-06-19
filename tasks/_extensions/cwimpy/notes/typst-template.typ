@@ -140,6 +140,8 @@
   show heading: it => { it; v(12pt, weak: true) }
 
 
+
+
   // Configure code
   show: codly-init.with()
   codly(languages: codly-languages)
@@ -275,7 +277,7 @@
 
 #let example = thmenv("example", boxcounting, none,
   (name, number, body, ..args) => {
-    showybox(title: [*#name* #h(1fr) Example #number],
+    showybox(title: [*#name* #h(1fr) Beispiel #number],
       frame: (border-color: purple, title-color: purple.lighten(30%), 
         body-color: purple.lighten(95%), footer-color: purple.lighten(80%)),
       ..args.named(), body)
@@ -283,7 +285,7 @@
 
 #let note = thmenv("note", boxcounting, none,
   (name, number, body, ..args) => {
-    showybox(title: [*#name* #h(1fr) Note #number],
+    showybox(title: [*#name* #h(1fr) Notiz #number],
       frame: (border-color: blue, title-color: blue.lighten(30%), 
         body-color: blue.lighten(95%), footer-color: blue.lighten(80%)),
       ..args.named(), body)
@@ -291,7 +293,7 @@
 
 #let attention = thmenv("attention", boxcounting, none,
   (name, number, body, ..args) => {
-    showybox(title: [*#name* #h(1fr) Attention #number],
+    showybox(title: [*#name* #h(1fr) Wichtig #number],
       frame: (border-color: rgb("#DC143C"), title-color: rgb("#DC143C").lighten(30%), 
         body-color: rgb("#DC143C").lighten(95%), footer-color: rgb("#DC143C").lighten(80%)),
       ..args.named(), body)
@@ -299,7 +301,7 @@
 
 #let quote = thmenv("quote", boxcounting, none,
   (name, number, body, ..args) => {
-    showybox(title: [*#name* #h(1fr) Quote #number],
+    showybox(title: [*#name* #h(1fr) Zitat #number],
       frame: (border-color: black, title-color: black.lighten(30%), 
         body-color: black.lighten(95%), footer-color: black.lighten(80%)),
       ..args.named(), body)
@@ -307,7 +309,7 @@
 
 #let theorem = thmenv("theorem", boxcounting, none,
   (name, number, body, ..args) => {
-    showybox(title: [*#name* #h(1fr) Theorem #number],
+    showybox(title: [*#name* #h(1fr) Theorie #number],
       frame: (border-color: navy, title-color: navy.lighten(30%), 
         body-color: navy.lighten(95%), footer-color: navy.lighten(80%)),
       ..args.named(), body)
@@ -323,7 +325,7 @@
 
 #let hypothesis = thmenv("hypothesis", boxcounting, none,
   (name, number, body, ..args) => {
-    showybox(title: [*#name* #h(1fr) Hypothesis #number],
+    showybox(title: [*#name* #h(1fr) Hypothese #number],
       frame: (border-color: orange, title-color: orange.lighten(10%), 
         body-color: orange.lighten(95%), footer-color: orange.lighten(80%)),
       ..args.named(), body)

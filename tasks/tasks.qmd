@@ -9,7 +9,7 @@ author:
   - name: Jane Doe
     url: https://example.com
 papersize: us-letter
-accent-color: "1a5490"
+accent-color: "8DA750"
 h1-prefix: "Lecture"
 colortab: true
 lof: false
