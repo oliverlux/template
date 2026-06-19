@@ -1,0 +1,139 @@
+---
+title: "Introduction to Statistics"
+short-title: "Intro Statistics"
+subtitle: "Course Notes, Week 1"
+format: notes-typst
+date: "2026-01-15"
+toc: true
+author:
+  - name: Jane Doe
+    url: https://example.com
+papersize: us-letter
+accent-color: "1a5490"
+h1-prefix: "Lecture"
+colortab: true
+lof: false
+lot: false
+lol: false
+---
+
+# Introduction to Statistics
+
+Statistics is the science of collecting, analyzing, and interpreting data. In this lecture, we'll explore the fundamental concepts.
+
+## Key Concepts
+
+- **Population**: The entire group being studied
+- **Sample**: A subset of the population
+- **Parameter**: A numerical characteristic of a population
+- **Statistic**: A numerical characteristic of a sample
+
+## Probability Basics
+
+The probability of an event $A$ is denoted as $P(A)$ and satisfies:
+
+$$
+0 \leq P(A) \leq 1
+$$
+
+For two events $A$ and $B$:
+
+
+The **median** is the middle value when data is sorted.
+
+```{=typst}
+#definition("Mean (Average)")[
+  The *mean* of a dataset is the sum of all values divided by the number of values. It represents the central tendency of the data and is sensitive to outliers.
+  
+  For a sample: $overline(x) = 1/n sum_(i=1)^n x_i$
+]
+```
+
+
+## Variance and Standard Deviation
+
+The sample variance is:
+
+$$
+s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
+$$
+
+And the standard deviation is simply $s = \sqrt{s^2}$.
+
+# Hypothesis Testing
+
+## The Framework
+
+1. State null hypothesis $H_0$ and alternative $H_A$
+2. Choose significance level $\alpha$ (typically 0.05)
+3. Calculate test statistic
+4. Make decision based on p-value
+
+## t-Test Example
+
+For a one-sample t-test:
+
+$$
+t = \frac{\bar{x} - \mu_0}{s/\sqrt{n}}
+$$
+
+where $\mu_0$ is the hypothesized population mean.
+
+```{=typst}
+#theorem("t-Distribution")[
+  Under the null hypothesis, if the population is normally distributed, the test statistic follows a t-distribution with $n-1$ degrees of freedom.
+]
+```
+
+# Conclusion
+
+This covers the basics of statistical analysis. Next lecture will focus on regression analysis and correlation.
+
+## Using Colored Boxes
+
+You can use the colored theorem boxes by inserting raw Typst code:
+
+```{=typst}
+#definition("Central Limit Theorem")[
+  The distribution of sample means approximates a normal distribution as the sample size becomes larger, regardless of the population's distribution shape.
+]
+```
+
+```{=typst}
+#theorem("Law of Large Numbers")[
+  As the number of trials increases, the sample mean converges to the expected value.
+]
+```
+
+```{=typst}
+#example("Sample Mean Calculation")[
+  For the dataset ${2, 4, 6, 8, 10}$, the mean is:
+  $ overline(x) = (2 + 4 + 6 + 8 + 10)/5 = 6 $
+]
+```
+
+```{=typst}
+#note("Important Note")[
+  Always check your assumptions before applying statistical tests.
+]
+```
+
+```{=typst}
+#attention("Warning")[
+  Sample size must be at least 30 for the Central Limit Theorem to apply reliably.
+]
+```
+
+Available box types:
+- `#definition[]` - Olive colored (for definitions)
+- `#theorem[]` - Navy colored (for theorems)
+- `#proposition[]` - Maroon colored (for propositions)
+- `#example[]` - Purple colored (for examples)
+- `#note[]` - Blue colored (for notes)
+- `#attention[]` - Red colored (for warnings/attention)
+- `#quote[]` - Black colored (for quotes)
+- `#hypothesis[]` - Orange colored (for hypotheses)
+
+---
+
+*End of lecture notes*

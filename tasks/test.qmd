@@ -1,26 +1,18 @@
 ---
-title: "Aufgabensammlung"
+title: "Aufgabensammlung Modul 114"
 lang: de
-author: "Oliver Lux"
-format:
-  pdf:
-    template: ./templates/eisvogel.tex
-    toc: true
-    lof: true
-    number-sections: true
-    number-depth: 3
-    subject: "QMD mit Quarto"
-    keywords: [Quarto, QMD, Beispiele]
-    subtitle: "Aufgabensammlung Modul xyz"
-    titlepage: true,
-    titlepage-rule-color: "360049"
-    titlepage-background: "./templates/background.pdf"
-    mainfont: "Arial"
+short-title: "Codierung"
+
+format: notes-typst
+accent-color: "2D5128"
+toc: false
+h1-prefix: "Aufgabe"
+colortab: true
 
 
 ---
 
-# Titel 1
+# Encoding mit Spass
 
 
 Note that unlike other Markdown renderers (notably Jupyter and GitHub), lists in Quarto require an entire blank line above the list. Otherwise the list will not be rendered in list form, rather it will all appear as normal text along a single line.
@@ -128,3 +120,32 @@ This is an example of a callout with a title.
 
 This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
 :::
+
+
+
+# Das sind andere Übungen
+
+Note that unlike other Markdown renderers (notably Jupyter and GitHub), lists in Quarto require an entire blank line above the list. Otherwise the list will not be rendered in list form, rather it will all appear as normal text along a single line.
+
+## Titel 2
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+
+{{< lipsum 1 >}}
+
+```
+code
+```
+## Bilder
+
+![Elephant](https://res.cloudinary.com/luggs/image/upload/v1702552495/GBS/portfolio.png){width=300}
+
+page 1
+
+{{< pagebreak >}}
+
+page 2
